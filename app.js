@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.listen(port);
 
 app.get('/getUsers',(req,res) => {
-	console.log(__dirname + "***" + path.resolve(__dirname, "db.json"));
+	//console.log(__dirname + "***" + path.resolve(__dirname, "db.json"));
 	fs.readFile(path.resolve(__dirname, "db.json"), 'utf8', function(err, data){
 		data = JSON.parse(data);
 		res.send(data);
@@ -24,7 +24,7 @@ app.get('/getUsers',(req,res) => {
 
 
 app.get('/getTopScores',(req,res) => {
-	console.log(__dirname + "***" + path.resolve(__dirname, "db.json"));
+	//console.log(__dirname + "***" + path.resolve(__dirname, "db.json"));
 	fs.readFile(path.resolve(__dirname, "db.json"), 'utf8', function(err, data){
 		data = JSON.parse(data);
 		for (var i = 0; i < data.results.length; i++) {
@@ -42,4 +42,4 @@ app.get('/getTopScores',(req,res) => {
 
 
 
-console.log('todo list RESTful API server started on: ' + port);
+//console.log('todo list RESTful API server started on: ' + port);
