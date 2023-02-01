@@ -1,1 +1,95 @@
-{"results":[{"gender":"female","name":{"title":"Mrs","first":"Alex","last":"James"},"location":{"street":{"number":2469,"name":"Herbert Road"},"city":"Tuam","state":"Waterford","country":"Ireland","postcode":59999,"coordinates":{"latitude":"-1.2618","longitude":"73.9183"},"timezone":{"offset":"+8:00","description":"Beijing, Perth, Singapore, Hong Kong"}},"email":"alex.james@example.com","login":{"uuid":"079d34ee-8b7e-4e52-9a61-39768638b036","username":"beautifulduck627","password":"harbor","salt":"RD54wl2Q","md5":"1ccdc4af492fa3709ae1906a2486a398","sha1":"218ea88b1859ec5d5cf344a1240375e21a20109d","sha256":"1dbfa18752a3e0dc0eff69e52ba942c43b507ebb9052c623ffa2a7d65241d18f"},"dob":{"date":"1972-06-16T21:46:52.229Z","age":50},"registered":{"date":"2010-01-26T15:14:37.798Z","age":13},"phone":"031-157-0237","cell":"081-223-1317","id":{"name":"PPS","value":"0215925T"},"picture":{"large":"https://randomuser.me/api/portraits/women/48.jpg","medium":"https://randomuser.me/api/portraits/med/women/48.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/women/48.jpg"},"nat":"IE"},{"gender":"female","name":{"title":"Mrs","first":"Alex","last":"Rose"},"location":{"street":{"number":3230,"name":"Jones Road"},"city":"Rush","state":"Longford","country":"Ireland","postcode":98167,"coordinates":{"latitude":"49.5288","longitude":"-99.7843"},"timezone":{"offset":"-10:00","description":"Hawaii"}},"email":"alex.rose@example.com","login":{"uuid":"36262b03-28e3-488f-8c61-55d8f0e63036","username":"happybear573","password":"believe","salt":"a6yndmAh","md5":"60409aa5135557ba29f479877ec8d89c","sha1":"841bebdbc27af73d004699e2086ed003a592cc7d","sha256":"55a14275453e9ab6774bf05e481e5484081523265d718706bd100148fd8959c2"},"dob":{"date":"1957-07-07T03:56:06.953Z","age":65},"registered":{"date":"2010-05-13T01:36:58.902Z","age":12},"phone":"041-625-3989","cell":"081-105-4717","id":{"name":"PPS","value":"2630101T"},"picture":{"large":"https://randomuser.me/api/portraits/women/65.jpg","medium":"https://randomuser.me/api/portraits/med/women/65.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/women/65.jpg"},"nat":"IE"},{"gender":"female","name":{"title":"Ms","first":"Lucia","last":"Santana"},"location":{"street":{"number":6072,"name":"Calle Covadonga"},"city":"Ciudad Real","state":"La Rioja","country":"Spain","postcode":76194,"coordinates":{"latitude":"-68.8937","longitude":"-133.4757"},"timezone":{"offset":"+11:00","description":"Magadan, Solomon Islands, New Caledonia"}},"email":"lucia.santana@example.com","login":{"uuid":"60836a79-385e-4de2-887c-2c39512025f8","username":"yellowgorilla106","password":"tttt","salt":"Q4c4nLQg","md5":"4ab5b251e5414e2d97849df6936e534b","sha1":"197685ec8102953f81fe98775b184a74ef57a4e6","sha256":"9cd0cb981491615816b94b654f3fc94b9af36e920b56cc4a3ec8e97c9d3754d1"},"dob":{"date":"1999-03-28T13:06:34.260Z","age":23},"registered":{"date":"2013-05-09T11:13:37.426Z","age":9},"phone":"949-240-940","cell":"643-139-297","id":{"name":"DNI","value":"36499575-G"},"picture":{"large":"https://randomuser.me/api/portraits/women/41.jpg","medium":"https://randomuser.me/api/portraits/med/women/41.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/women/41.jpg"},"nat":"ES"},{"gender":"male","name":{"title":"Mr","first":"Isaac","last":"Giménez"},"location":{"street":{"number":2439,"name":"Calle Mota"},"city":"Mérida","state":"Asturias","country":"Spain","postcode":59276,"coordinates":{"latitude":"64.1408","longitude":"73.3450"},"timezone":{"offset":"-12:00","description":"Eniwetok, Kwajalein"}},"email":"isaac.gimenez@example.com","login":{"uuid":"f933cbae-0e39-4a1e-b60f-866f470f7076","username":"yellowbear865","password":"25252525","salt":"8ZKybwzg","md5":"7288b3e0a3c6154d7368334b2ea9d9e2","sha1":"e13888262f0814091b9c8f3e1834ee225cd2c237","sha256":"49d89e51e7aad8d1eb230f85b6a629e43f439f91043110394ff1123922d3bdc2"},"dob":{"date":"1957-11-13T14:39:52.258Z","age":65},"registered":{"date":"2018-05-14T09:30:43.221Z","age":4},"phone":"931-712-250","cell":"611-430-415","id":{"name":"DNI","value":"25292733-A"},"picture":{"large":"https://randomuser.me/api/portraits/men/96.jpg","medium":"https://randomuser.me/api/portraits/med/men/96.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/men/96.jpg"},"nat":"ES"},{"gender":"male","name":{"title":"Mr","first":"Onur","last":"Gönültaş"},"location":{"street":{"number":8390,"name":"Filistin Cd"},"city":"Niğde","state":"Erzincan","country":"Turkey","postcode":49473,"coordinates":{"latitude":"-67.7475","longitude":"-41.7603"},"timezone":{"offset":"-9:00","description":"Alaska"}},"email":"onur.gonultas@example.com","login":{"uuid":"f3ec596f-e8c8-4341-b503-e828fd960561","username":"tinyfrog359","password":"hhhhhhhh","salt":"YVMLeEZf","md5":"fa15465c337f3db57b92ae69a347b7d6","sha1":"6b661244469fd52642bcc3df9c13a6d1b3447948","sha256":"42cc9b48b2a4a501d434a0202caf936a51501d56ee0ca50bfb8b100a00fb63da"},"dob":{"date":"1985-05-18T07:48:02.090Z","age":37},"registered":{"date":"2018-08-23T06:24:52.660Z","age":4},"phone":"(565)-890-9921","cell":"(711)-408-9383","id":{"name":"","value":null},"picture":{"large":"https://randomuser.me/api/portraits/men/77.jpg","medium":"https://randomuser.me/api/portraits/med/men/77.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/men/77.jpg"},"nat":"TR"}],"info":{"seed":"e3290cadd879ccdf","results":5,"page":1,"version":"1.4"}}
+{
+  "results": [
+    {
+      "gender": "female",
+      "name": "Alex James",
+      "country" : "Ireland",
+      "email": "alex.james@example.com",
+      "age": 23,
+      "id": "F101",
+      "score": "1000"
+    },
+    {
+      "gender": "female",
+      "name": "Lucia Santana",
+      "country" : "India",
+      "email": "lucia.santana@example.com",
+      "age": 26,
+      "id": "F102",
+      "score": "978"
+    },
+    {
+      "gender": "male",
+      "name": "Issac Gimenez",
+      "country" : "United Kingdom",
+      "email": "issac.gimenez@example.com",
+      "age": 18,
+      "id": "F103",
+      "score": "1030"
+    },
+    {
+      "gender": "male",
+      "name": "Simon Johanson",
+      "country" : "France",
+      "email": "simon.johanson@example.com",
+      "age": 30,
+      "id": "F104",
+      "score": "567"
+    },
+    {
+      "gender": "male",
+      "name": "Shubhangi Anand",
+      "country" : "India",
+      "email": "shubhangi.anand@example.com",
+      "age": 34,
+      "id": "F105",
+      "score": "999"
+    },
+    {
+      "gender": "female",
+      "name": "Ruby May",
+      "country" : "United States",
+      "email": "ruby.may@example.com",
+      "age": 28,
+      "id": "F106",
+      "score": "1000"
+    },
+    {
+      "gender": "female",
+      "name": "Carla Silva",
+      "country" : "Australia",
+      "email": "carla.silva@example.com",
+      "age": 28,
+      "id": "F107",
+      "score": "1000"
+    },
+    {
+      "gender": "female",
+      "name": "Laurie Roy",
+      "country" : "Australia",
+      "email": "laurie.roy@example.com",
+      "age": 32,
+      "id": "F108",
+      "score": "1450"
+    },
+    {
+      "gender": "male",
+      "name": "Titouan Lecrec",
+      "country" : "Spain",
+      "email": "titouan.lecrec@example.com",
+      "age": 45,
+      "id": "F109",
+      "score": "1200"
+    },
+    {
+      "gender": "male",
+      "name": "Stanley Cook",
+      "country" : "New Zealand",
+      "email": "stanley.cook@example.com",
+      "age": 31,
+      "id": "F110",
+      "score": "324"
+    }
+    
+  ]
+}
