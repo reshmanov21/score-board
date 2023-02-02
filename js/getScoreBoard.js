@@ -54,8 +54,7 @@ function getAllScorersData() {
 		type:'GET',
 		cors: true ,
 		success: function(data) {
-		console.log(data);
-		var rows = '';
+		var rows = '<tr><th>ID</th><th>Name</th><th>Score</th><th>Country</th></tr>';
 		for (var i = 0; i < 5; i++) {
 			rows += '<tr>';
             rows += '<td>' + data[i].id + '</td>';
@@ -64,21 +63,20 @@ function getAllScorersData() {
 			rows += '<td>' + data[i].country + '</td>';
 			rows += '</tr>';
 		}
-		document.getElementById('table').innerHTML += rows;
+		document.getElementById('table').innerHTML = rows;
 	}
 });
 }
 
 function getMaleScorersData() {
 	$.ajax({
-		url: 'http://localhost:5000/getTopScores',
+		url: 'http://localhost:5000/getMaleTopScores',
 		dataType: 'json',
 		type:'GET',
 		cors: true ,
 		success: function(data) {
-		console.log(data);
-		var rows = '';
-		for (var i = 0; i < data.length; i++) {
+		var rows = '<tr><th>ID</th><th>Name</th><th>Score</th><th>Country</th></tr>';
+		for (var i = 0; i < 5; i++) {
 			rows += '<tr>';
             rows += '<td>' + data[i].id + '</td>';
 			rows += '<td>' + data[i].name + '</td>';
@@ -86,21 +84,20 @@ function getMaleScorersData() {
 			rows += '<td>' + data[i].country + '</td>';
 			rows += '</tr>';
 		}
-		document.getElementById('table').innerHTML += rows;
+		document.getElementById('table').innerHTML = rows;
 	}
 });
 }
 
 function getFemaleScorersData() {
 	$.ajax({
-		url: 'http://localhost:5000/getTopScores',
+		url: 'http://localhost:5000/getFemaleTopScores',
 		dataType: 'json',
 		type:'GET',
 		cors: true ,
 		success: function(data) {
-		console.log(data);
-		var rows = '';
-		for (var i = 0; i < data.length; i++) {
+		var rows = '<tr><th>ID</th><th>Name</th><th>Score</th><th>Country</th></tr>';
+		for (var i = 0; i < 5; i++) {
 			rows += '<tr>';
             rows += '<td>' + data[i].id + '</td>';
 			rows += '<td>' + data[i].name + '</td>';
@@ -108,7 +105,7 @@ function getFemaleScorersData() {
 			rows += '<td>' + data[i].country + '</td>';
 			rows += '</tr>';
 		}
-		document.getElementById('table').innerHTML += rows;
+		document.getElementById('table').innerHTML = rows;
 	}
 });
 	

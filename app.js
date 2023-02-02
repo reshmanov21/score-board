@@ -15,7 +15,6 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.listen(port);
 
 app.get('/getUsers',(req,res) => {
-	//console.log(__dirname + "***" + path.resolve(__dirname, "db.json"));
 	fs.readFile(path.resolve(__dirname, "db.json"), 'utf8', function(err, data){
 		data = JSON.parse(data);
 		res.setHeader('Access-Control-Allow-Origin', 'http://localhost:5500');
@@ -25,13 +24,8 @@ app.get('/getUsers',(req,res) => {
 
 
 app.get('/getTopScores',(req,res) => {
-	//console.log(__dirname + "***" + path.resolve(__dirname, "db.json"));
 	fs.readFile(path.resolve(__dirname, "db.json"), 'utf8', function(err, data){
 		data = JSON.parse(data);
-		//for (var i = 0; i < data.results.length; i++) {
-		//	console.log("***");
-		//	console.log(data.results[i].score);
-		//}
 		json = data.results;
 		json.sort(function(a, b){
 			return b.score - a.score;
@@ -45,10 +39,14 @@ app.get('/getTopScores',(req,res) => {
 
 
 app.get('/getMaleTopScores',(req,res) => {
-	//console.log(__dirname + "***" + path.resolve(__dirname, "db.json"));
 	fs.readFile(path.resolve(__dirname, "db.json"), 'utf8', function(err, data){
 		data = JSON.parse(data);
 		json = data.results;
+		for (var i = 0; i < json.length; i++) {
+			if(json[i].gender == "female"){
+				delete json[i];
+			}
+		}
 		json.sort(function(a, b){
 			return b.score - a.score;
 		});
@@ -60,31 +58,14 @@ app.get('/getMaleTopScores',(req,res) => {
 
 
 app.get('/getFemaleTopScores',(req,res) => {
-	//console.log(__dirname + "***" + path.resolve(__dirname, "db.json"));
 	fs.readFile(path.resolve(__dirname, "db.json"), 'utf8', function(err, data){
 		data = JSON.parse(data);
 		json = data.results;
-		json.sort(function(a, b){
-			return b.score - a.score;
-		});
-		
-		res.setHeader('Access-Control-Allow-Origin', 'http://localhost:5500');
-		res.send(json);
-	});
-});
-
-
-
-
-app.get('/getTopScores',(req,res) => {
-	//console.log(__dirname + "***" + path.resolve(__dirname, "db.json"));
-	fs.readFile(path.resolve(__dirname, "db.json"), 'utf8', function(err, data){
-		data = JSON.parse(data);
-		for (var i = 0; i < data.results.length; i++) {
-			console.log("***");
-			console.log(data.results[i].score);
+		for (var i = 0; i < json.length; i++) {
+			if(json[i].gender == "male"){
+				delete json[i];
+			}
 		}
-		json = data.results;
 		json.sort(function(a, b){
 			return b.score - a.score;
 		});
@@ -95,5 +76,31 @@ app.get('/getTopScores',(req,res) => {
 });
 
 
+app.post('/setPlayerScore', (req,res) => {
+	fs.readFile(path.resolve(__dirname, "db.json"), 'utf8', function(err, data){
+		data = JSON.parse(data);
+		data = setPlayerScore(JSON.stringify(data), req.body.id, req.body.score);
+		fs.writeFile(path.resolve(__dirname, "db.json"), data, 'utf8', function (err) {
+			if (err) {
+				console.log("An error occured while writing JSON Object to File.");
+				return console.log(err);
+			}	
+			console.log("JSON file has been saved.");
+			data = JSON.parse(data);
+			res.send(data);
+		});
+	});
+});
 
-//console.log('todo list RESTful API server started on: ' + port);
+
+function setPlayerScore(jsonObj, id, score) {
+	jsonObj = JSON.parse(jsonObj);
+	for (var i = 0; i < jsonObj.results.length; i++) {
+		if (jsonObj.results[i].id == id) {
+			console.log("Equal");
+			jsonObj.results[i].score = parseInt(jsonObj.results[i].score) + parseInt(score);
+		}
+	}
+	return JSON.stringify(jsonObj);
+}
+
