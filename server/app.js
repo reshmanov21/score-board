@@ -10,7 +10,6 @@ const path = require("path");
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
-app.listen(port);
 
 app.get('/getPlayers',(req,res) => {
 	fs.readFile(path.resolve(__dirname, "db.json"), 'utf8', function(err, data){
@@ -101,3 +100,10 @@ function setPlayerScore(jsonObj, id, score) {
 	return JSON.stringify(jsonObj);
 }
 
+
+function add (a,b){
+	return a+b;
+}
+
+module.exports = app;
+//export default app
